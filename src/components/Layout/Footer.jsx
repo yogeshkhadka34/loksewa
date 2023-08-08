@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../common/Container";
 import Image from "next/image";
-import Logo from "@/assets/mock/logologo.png";
+import Logo from "@/assets/mock/Logologo.png";
 import headerOptions from "@/constants/headerOptions";
 import Styles from "./footer.module.css";
 
