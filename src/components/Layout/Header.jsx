@@ -4,7 +4,7 @@ import Styles from "./header.module.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import ButtonLink from "../common/ButtonLink";
 import Image from "next/image";
-import Logo from "@/assets/mock/logologo.png";
+import Logo from "@/assets/mock/Logologo.png";
 import headerOptions from "@/constants/headerOptions";
 
 const Menu = () => {
