@@ -1,0 +1,27 @@
+.footer-full{
+    background-color: var(--color-primary-sapphire);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links ul{
+    list-style-type: none;
+    color: var(--color-white);
+}
+.copyright{
+    color: var(--color-white);
+}
+@media screen and (max-width: 768px){
+    .footer-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0rem;
+        }
+    .copyright{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,77 @@
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: var(--color-primary-sapphire);
+  color: var(--color-white);
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  padding: 1rem 5.1rem;
+}
+.button--primary:hover {
+  background-color: var(--color-primary-sapphire-light);
+}
+.button--secondary {
+  background-color: var(--color-accent-pumpkin);
+  color: var(--color-white);
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+}
+.button--secondary:hover {
+  background-color: var(--color-accent-pumpkin-dark);
+}
+
+.button--transparent {
+  background-color: none;
+  color: black;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  padding: 1rem 5.1rem;
+  border: 1px solid black;
+}
+
+.button--transparent:hover {
+  background-color: var(--color-white);
+}
+
+.button--disabled,
+.button--disabled:hover {
+  background-color: rgb(231, 229, 229);
+  color: #3d3d3d;
+  cursor: not-allowed;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+  padding: 1rem 5.1rem;
+}
+
+.button--navlink {
+  color: var(--color-white);
+  border: unset;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.button--navlink:hover {
+  color: var(--color-accent-pumpkin);
+}
+
+@media screen and (max-width: 768px) {
+  .button--transparent {
+    background-color: none;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    border: 1px solid black;
+  }
+  .button--primary {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+  }
+}

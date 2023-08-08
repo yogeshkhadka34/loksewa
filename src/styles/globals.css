@@ -1,0 +1,41 @@
+
+:root{
+    --font-primary : 'Poppins', sans-serif;
+    --font-logo : 'Ramabhadra', sans-serif;
+    --font-montserrat : 'Montserrat',
+        sans-serif;
+    --font-lato : 'Lato',
+        sans-serif;
+   
+    --color-primary-sapphire :  #0A1045;
+    --color-primary-sapphire-light : #101763;
+    --color-primary-lavender : #E6FAFC;
+    --color-background-light : #F5F5F5;
+    --color-white : #fff;
+
+    --color-accent-dark-tangerine : #F99417 ;
+    --color-accent-pumpkin : #FA7921 ;
+    --color-accent-pumpkin-dark: #d45d0e;
+    --color-accent-wisteria: #B49FCC;
+    --color-accent-wisteria-light: rgba(180, 159, 204,1);
+    --color-accent-french-lilac: #985F99;
+    --color-accent-teal: #007590;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

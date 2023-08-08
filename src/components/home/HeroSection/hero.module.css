@@ -1,0 +1,134 @@
+/* Heroarea container diplaying flex row */
+.heroarea-full{
+  background-color: var(--color-primary-sapphire);
+}
+
+.heroarea-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
+}
+
+/* Heroarea Left section which includes heroarea text section */
+.heroarea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.herotext {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+.herotext-title h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  font-weight: 600;
+}
+.herotext-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  letter-spacing: 5%;
+}
+
+/* Get started button */
+.get-started {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: flex-start;
+  
+}
+.get-started-label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+}
+
+/* Hero Image styling section */
+.hero-image {
+  flex: 1;
+}
+.hero-image img {
+  width: min(100%, 40rem);
+  aspect-ratio: 474/535;
+}
+
+@media screen and (max-width: 1050px) {
+  .hero-image img {
+    width: min(100%, 40rem);
+    object-fit: scale-down;
+  }
+  .heroarea-container {
+    gap: 2rem;
+    padding-top: unset;
+  }
+  .herotext-title h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+
+  .herotext-content p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .get-started-label {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroarea-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
+  .heroarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: unset;
+    text-align: center;
+  }
+
+  .herotext {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .herotext h1 {
+    text-align: center;
+  }
+  .herotext-content p {
+    display: none;
+  }
+  
+  .get-started {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ 
+}

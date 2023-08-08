@@ -1,0 +1,20 @@
+.container{
+    max-width: 144rem; 
+    padding-inline: 12rem;
+}
+
+@media screen and (max-width: 1050px) {
+    .container{
+        padding-inline: 10rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding-inline: 4rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding-inline: 2rem;
+    }
+}

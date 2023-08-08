@@ -1,0 +1,28 @@
+.button{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    padding: 1rem 5.1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button--primary{
+    background-color: var(--color-primary-sapphire);
+    color: var(--color-white);
+}
+.button--primary:hover{
+    background-color: var(--color-primary-sapphire-light);
+}
+.button--secondary {
+    background-color: var(--color-accent-pumpkin);
+    color: var(--color-white);
+}
+.button--secondary:hover {
+    background-color: var(--color-accent-pumpkin-dark);
+}
+.button--disabled, .button--disabled:hover{
+    background-color: rgb(231, 229, 229);
+    color: #3d3d3d;
+    cursor: not-allowed;
+}

@@ -1,0 +1,48 @@
+.service-card{
+    background-color: var(--color-white);
+    width: 22rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    padding: 3.6rem 2.4rem;
+    border: 1px solid grey;
+    position: relative;
+    overflow: hidden;
+}
+.decoration{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--color-accent-wisteria);
+    position: absolute;
+    right: -4.5rem;
+    top: -4.5rem;
+}
+.service-card h2{
+    font-family: var(--font-primary);
+    font-size: 2.1rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+
+}
+.service-card p{
+    font-family: var(--font-lato);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: rgba(10, 16, 69, 0.8);
+}
+
+@media screen and (max-width: 560px){
+    .service-card {
+          
+            width: 32rem;
+            height: 28rem;
+            border-radius: 1.5rem;
+            padding: 4rem 2rem;
+            border: 1px solid grey;
+            
+        }
+}

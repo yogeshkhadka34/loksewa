@@ -1,0 +1,134 @@
+/* Flex display for overall header */
+.navbar-container {
+  background-color: var(--color-primary-sapphire);
+}
+
+.header {
+  color: var(--color-white);
+  padding-top: 2rem;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 0;
+  position: relative;
+}
+
+/*CSS for Loksewa Smart Study Logo  */
+.logo {
+  flex: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo img {
+  width: 16rem;
+  object-fit: scale-down;
+}
+
+/* Css for Navbar Links Section */
+.navbar-links-container {
+  flex: 6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* Css for Navbar Signin and Login section */
+.navbar-sign {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Mobile Menu container */
+.mobile_menu {
+  display: none;
+}
+
+.mobile_menu-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+ 
+  background: var(--color-primary-sapphire-light);
+  border-radius: 1rem;
+  top: 0;
+  right: 0;
+  margin-right: 3.2rem;
+  margin-top: 10rem;
+  position: absolute;
+  padding: 1rem 0;
+}
+.mobile_menu-container-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  padding: 2rem 12rem;
+}
+.mobile_menu-container-sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  align-items: start;
+  gap: 2rem;
+  padding-left: 4rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-links-container {
+    display: none;
+  }
+  .navbar-sign {
+    gap: 4rem;
+    margin-right: 2rem;
+  }
+
+  .mobile_menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2rem 4rem;
+  }
+  .navbar-links_container,
+  .navbar-link,
+  .navbar-sign {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 2rem;
+  }
+  .navbar-links_container,
+  .navbar-link {
+    display: none;
+  }
+
+  .navbar-sign {
+    display: none;
+  }
+
+  /* .gpt3__navbar-menu_container {
+        top: 20px;
+    }
+
+    .gpt3__navbar-menu_container-links-sign {
+        display: block;
+    } */
+}
